@@ -4,7 +4,7 @@
   "description": "Example of how to deploy a Express.js Netlify app.",
   "main": "functions/server.js",
   "scripts": {
-    "build": "netlify-lambda build strong-body-proxy",
+    "build": "netlify-lambda build strong-body",
     "start": "nodemon server-local.js"
   },
   "repository": {
