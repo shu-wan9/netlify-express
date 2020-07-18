@@ -4,7 +4,7 @@
   "description": "Example of how to deploy a Express.js Netlify app.",
   "main": "functions/server.js",
   "scripts": {
-    "build": "netlify-lambda build strong-body",
+    "build": "netlify-lambda build strong-body-proxy",
     "start": "nodemon server-local.js"
   },
   "repository": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/neverendingqs/netlify-express#readme",
   "dependencies": {
     "got": "^11.5.1",
+    "http-proxy-middleware": "^1.0.5",
     "lowdb": "^1.0.0"
   },
   "devDependencies": {

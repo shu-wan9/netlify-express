@@ -855,6 +855,13 @@
   resolved "https://registry.npm.taobao.org/@types/http-cache-semantics/download/@types/http-cache-semantics-4.0.0.tgz?cache=0&sync_timestamp=1588200826694&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fhttp-cache-semantics%2Fdownload%2F%40types%2Fhttp-cache-semantics-4.0.0.tgz#9140779736aa2655635ee756e2467d787cfe8a2a"
   integrity sha1-kUB3lzaqJlVjXudW4kZ9eHz+iio=
 
+"@types/http-proxy@^1.17.4":
+  version "1.17.4"
+  resolved "https://registry.npm.taobao.org/@types/http-proxy/download/@types/http-proxy-1.17.4.tgz?cache=0&sync_timestamp=1588200578015&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fhttp-proxy%2Fdownload%2F%40types%2Fhttp-proxy-1.17.4.tgz#e7c92e3dbe3e13aa799440ff42e6d3a17a9d045b"
+  integrity sha1-58kuPb4+E6p5lED/QubToXqdBFs=
+  dependencies:
+    "@types/node" "*"
+
 "@types/json-schema@^7.0.4":
   version "7.0.5"
   resolved "https://registry.npm.taobao.org/@types/json-schema/download/@types/json-schema-7.0.5.tgz?cache=0&sync_timestamp=1591720889158&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjson-schema%2Fdownload%2F%40types%2Fjson-schema-7.0.5.tgz#dcce4430e64b443ba8945f0290fb564ad5bac6dd"
@@ -2020,6 +2027,11 @@ etag@~1.8.1:
   resolved "https://registry.npm.taobao.org/etag/download/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
+eventemitter3@^4.0.0:
+  version "4.0.4"
+  resolved "https://registry.npm.taobao.org/eventemitter3/download/eventemitter3-4.0.4.tgz#b5463ace635a083d018bdc7c917b4c5f10a85384"
+  integrity sha1-tUY6zmNaCD0Bi9x8kXtMXxCoU4Q=
+
 events@^3.0.0:
   version "3.1.0"
   resolved "https://registry.npm.taobao.org/events/download/events-3.1.0.tgz#84279af1b34cb75aa88bf5ff291f6d0bd9b31a59"
@@ -2223,6 +2235,11 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+follow-redirects@^1.0.0:
+  version "1.12.1"
+  resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.12.1.tgz?cache=0&sync_timestamp=1592518530318&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.12.1.tgz#de54a6205311b93d60398ebc01cf7015682312b6"
+  integrity sha1-3lSmIFMRuT1gOY68Ac9wFWgjErY=
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -2494,6 +2511,26 @@ http-errors@~1.7.2:
     setprototypeof "1.1.1"
     statuses ">= 1.5.0 < 2"
     toidentifier "1.0.0"
+
+http-proxy-middleware@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npm.taobao.org/http-proxy-middleware/download/http-proxy-middleware-1.0.5.tgz#4c6e25d95a411e3d750bc79ccf66290675176dc2"
+  integrity sha1-TG4l2VpBHj11C8ecz2YpBnUXbcI=
+  dependencies:
+    "@types/http-proxy" "^1.17.4"
+    http-proxy "^1.18.1"
+    is-glob "^4.0.1"
+    lodash "^4.17.19"
+    micromatch "^4.0.2"
+
+http-proxy@^1.18.1:
+  version "1.18.1"
+  resolved "https://registry.npm.taobao.org/http-proxy/download/http-proxy-1.18.1.tgz#401541f0534884bbf95260334e72f88ee3976549"
+  integrity sha1-QBVB8FNIhLv5UmAzTnL4juOXZUk=
+  dependencies:
+    eventemitter3 "^4.0.0"
+    follow-redirects "^1.0.0"
+    requires-port "^1.0.0"
 
 http2-wrapper@^1.0.0-beta.5.0:
   version "1.0.0-beta.5.2"
@@ -3814,6 +3851,11 @@ repeat-string@^1.6.1:
   version "1.6.1"
   resolved "https://registry.npm.taobao.org/repeat-string/download/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
   integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
+
+requires-port@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
+  integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
 resolve-alpn@^1.0.0:
   version "1.0.0"
