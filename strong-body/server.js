@@ -34,7 +34,7 @@ router.get("/", (req, res) => {
 router.get(GET_URL, async (req, res) => {
   try {
     const data = await getState();
-    res.sendData(data, "查询成功");
+    res.send(JSON.parse(data));
   } catch (e) {
     console.log(e);
     res.sendMsg("查询失败");
