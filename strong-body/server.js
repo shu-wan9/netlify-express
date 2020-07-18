@@ -43,9 +43,7 @@ router.get(GET_URL, async (req, res) => {
 router.post(POST_URL, async (req, res) => {
   try {
     const { exerciseData } = req.body;
-    await setState({
-      exerciseData,
-    });
+    await setState(exerciseData);
     res.sendMsg("成功");
   } catch (e) {
     console.log(e);
