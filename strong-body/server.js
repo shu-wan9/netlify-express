@@ -6,9 +6,9 @@ const app = express();
 const bodyParser = require("body-parser");
 const got = require("got");
 
-const TARGET = "http://180.76.114.135:8080";
-const GET_URL = "/api/exercise/getState";
-const POST_URL = "/api/exercise/setState";
+const TARGET = "http://180.76.114.135:8080/api";
+const GET_URL = "/exercise/getState";
+const POST_URL = "/exercise/setState";
 
 async function getState() {
   return got.get(TARGET + GET_URL).then((res) => {
@@ -76,8 +76,10 @@ app.use((req, res, next) => {
   };
   next();
 });
-app.use("/.netlify/functions/server", router); // path must route to lambda
-app.use("/", (req, res) => res.sendFile(path.join(__dirname, "../index.html")));
+app.use("/api", router); // path must route to lambda
+app.use("/", (req, res) => {
+  res.send("hi");
+});
 
 module.exports = app;
 module.exports.handler = serverless(app);
