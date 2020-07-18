@@ -1,3 +1,8 @@
 [build]
   command = "npm install && npm run build"
   functions = "functions"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    access-control-allow-origin = "*"
+    access-control-allow-headers = "content-type"
