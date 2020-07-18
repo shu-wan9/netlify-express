@@ -52,7 +52,11 @@ router.post(POST_URL, async (req, res) => {
     res.sendMsg("失败");
   }
 });
-
+app.use((req, res, next) => {
+  res.setHeader("access-control-allow-origin", "*");
+  res.setHeader("access-control-allow-headers", "content-type");
+  next();
+});
 app.use(bodyParser.json());
 app.use((req, res, next) => {
   res.sendMsg = function (msg) {
