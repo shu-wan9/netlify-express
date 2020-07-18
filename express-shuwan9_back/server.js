@@ -2,9 +2,9 @@ const express = require("express");
 const serverless = require("serverless-http");
 const bodyParser = require("body-parser");
 const app = express();
-// const db = require("./db");
-// const { clearState, getState, setState } = require("./query");
-// const { read } = require('./db')
+const db = require("./db");
+const { clearState, getState, setState } = require("./query");
+// const { read } = require("./db");
 app.use((req, res, next) => {
   res.setHeader("access-control-allow-origin", "*");
   res.setHeader("access-control-allow-headers", "content-type");
