@@ -74,7 +74,7 @@ app.use((req, res, next) => {
   };
   next();
 });
-app.use("/api", router); // path must route to lambda
+app.use("/.netlify/functions/server/api", router); // path must route to lambda
 app.use("/", (req, res) => {
   res.send("hi");
 });
