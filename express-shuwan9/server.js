@@ -30,6 +30,9 @@ app.use((req, res, next) => {
   };
   next();
 });
+app.get("/", (req, res) => {
+  res.send("hi");
+});
 app.get("/api/exercise/getState", async (req, res) => {
   try {
     const data = await getState();
